@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Activity Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-map-marker-alt"></i> Local Activity Finder</h1>
+            <p>Discover amazing food, attractions, and activities near you!</p>
+        </header>
+
+        <div class="location-section">
+            <button id="getLocationBtn" class="location-btn">
+                <i class="fas fa-crosshairs"></i>
+                Get My Location
+            </button>
+            <div id="locationInfo" class="location-info hidden">
+                <i class="fas fa-map-pin"></i>
+                <span id="locationText">Location detected</span>
+            </div>
+        </div>
+
+        <div id="loadingSection" class="loading-section hidden">
+            <div class="loading-spinner">
+                <i class="fas fa-spinner fa-spin"></i>
+            </div>
+            <p>Finding amazing things to do near you...</p>
+        </div>
+
+        <div id="resultsSection" class="results-section hidden">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="food">
+                    <i class="fas fa-utensils"></i>
+                    Food & Dining
+                </button>
+                <button class="tab-btn" data-category="tourist">
+                    <i class="fas fa-camera"></i>
+                    Tourist Places
+                </button>
+                <button class="tab-btn" data-category="activities">
+                    <i class="fas fa-gamepad"></i>
+                    Activities
+                </button>
+            </div>
+
+            <div class="tab-content">
+                <div id="foodTab" class="tab-panel active">
+                    <div class="category-header">
+                        <h2><i class="fas fa-utensils"></i> Food & Dining</h2>
+                    </div>
+                    <div id="foodResults" class="results-grid"></div>
+                </div>
+
+                <div id="touristTab" class="tab-panel">
+                    <div class="category-header">
+                        <h2><i class="fas fa-camera"></i> Tourist Places & Attractions</h2>
+                    </div>
+                    <div id="touristResults" class="results-grid"></div>
+                </div>
+
+                <div id="activitiesTab" class="tab-panel">
+                    <div class="category-header">
+                        <h2><i class="fas fa-gamepad"></i> Activities & Entertainment</h2>
+                    </div>
+                    <div id="activitiesResults" class="results-grid"></div>
+                </div>
+            </div>
+
+            <div class="refresh-section">
+                <button id="refreshBtn" class="refresh-btn">
+                    <i class="fas fa-sync-alt"></i>
+                    Get New Suggestions
+                </button>
+            </div>
+        </div>
+
+        <div id="errorSection" class="error-section hidden">
+            <div class="error-content">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>Oops! Something went wrong</h3>
+                <p id="errorMessage">Unable to get your location or suggestions.</p>
+                <button id="retryBtn" class="retry-btn">
+                    <i class="fas fa-redo"></i>
+                    Try Again
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Powered by OpenAI • Made with <i class="fas fa-heart"></i> by OpenHands</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
