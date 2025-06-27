@@ -188,5 +188,3 @@ This project is licensed under the MIT License.
 - **OpenHands** for development assistance
 
 ---
-
-**I vibe coded this app in 20 minutes with OpenHand**
