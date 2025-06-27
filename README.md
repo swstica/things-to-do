@@ -189,4 +189,4 @@ This project is licensed under the MIT License.
 
 ---
 
-**Made with ❤️ by OpenHands**
+**I vibe coded this app in 20 minutes with OpenHand**

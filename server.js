@@ -37,12 +37,15 @@ app.post('/api/suggestions', async (req, res) => {
     // Create a prompt for OpenAI
     const prompt = `I'm currently at coordinates ${latitude}, ${longitude}${locationName ? ` (${locationName})` : ''}. 
 
-Please suggest fun things to do in this area and categorize them into exactly these three categories:
+Please suggest fun things to do in this area and categorize them into exactly these six categories:
 1. Food & Dining
 2. Tourist Places & Attractions  
 3. Activities & Entertainment
+4. Shopping & Markets
+5. Nightlife & Entertainment
+6. Family & Kids
 
-For each category, provide 5-7 specific suggestions with:
+For each category, provide 4-5 specific suggestions with:
 - Name of the place/activity
 - Brief description (1-2 sentences)
 - Why it's worth visiting/doing
@@ -68,6 +71,27 @@ Format your response as a JSON object with this exact structure:
       "name": "Activity Name",
       "description": "Brief description of the activity", 
       "reason": "Why you should try it"
+    }
+  ],
+  "shopping": [
+    {
+      "name": "Shopping Place Name",
+      "description": "Brief description of what makes this place special",
+      "reason": "Why you should visit"
+    }
+  ],
+  "nightlife": [
+    {
+      "name": "Nightlife Venue Name",
+      "description": "Brief description of the venue and atmosphere",
+      "reason": "Why you should check it out"
+    }
+  ],
+  "family": [
+    {
+      "name": "Family Activity/Place Name",
+      "description": "Brief description of the family-friendly activity",
+      "reason": "Why families should visit"
     }
   ]
 }

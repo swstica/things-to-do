@@ -103,18 +103,21 @@ body {
     justify-content: center;
     margin-bottom: 30px;
     border-bottom: 2px solid #eee;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .tab-btn {
     background: none;
     border: none;
-    padding: 15px 25px;
-    font-size: 1rem;
+    padding: 12px 20px;
+    font-size: 0.9rem;
     cursor: pointer;
     transition: all 0.3s ease;
     border-bottom: 3px solid transparent;
-    margin: 0 10px;
+    margin: 0 5px;
     color: #666;
+    white-space: nowrap;
 }
 
 .tab-btn.active {
@@ -297,13 +300,20 @@ body {
     }
     
     .category-tabs {
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        gap: 2px;
     }
     
     .tab-btn {
-        margin: 5px 0;
-        width: 200px;
+        margin: 2px;
+        padding: 10px 12px;
+        font-size: 0.8rem;
+        flex: 1;
+        min-width: 0;
+    }
+    
+    .tab-btn i {
+        margin-right: 4px;
     }
     
     .results-grid {

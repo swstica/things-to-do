@@ -114,6 +114,72 @@ app.post('/api/suggestions', async (req, res) => {
           description: "Intimate setting featuring local musicians and touring acts across various genres.",
           reason: "Experience the local music scene and discover new artists in a cozy atmosphere."
         }
+      ],
+      shopping: [
+        {
+          name: "Artisan Craft Market",
+          description: "Local artisans selling handmade jewelry, pottery, textiles, and unique gifts.",
+          reason: "Find one-of-a-kind items while supporting local craftspeople and artists."
+        },
+        {
+          name: "Vintage Boutique District",
+          description: "Collection of vintage clothing stores and antique shops in historic buildings.",
+          reason: "Discover unique fashion pieces and collectibles with character and history."
+        },
+        {
+          name: "Local Farmers Co-op",
+          description: "Community-owned store featuring organic produce, local goods, and eco-friendly products.",
+          reason: "Support sustainable practices while shopping for fresh, local products."
+        },
+        {
+          name: "Bookstore & Coffee Corner",
+          description: "Independent bookstore with rare finds, local authors, and cozy reading nooks.",
+          reason: "Browse unique books while enjoying artisanal coffee in a literary atmosphere."
+        }
+      ],
+      nightlife: [
+        {
+          name: "Rooftop Cocktail Lounge",
+          description: "Sophisticated bar with craft cocktails and panoramic city views.",
+          reason: "Perfect for evening drinks with friends while enjoying stunning sunset views."
+        },
+        {
+          name: "Jazz & Blues Club",
+          description: "Intimate venue featuring live jazz performances and classic cocktails.",
+          reason: "Experience authentic live music in a classic, atmospheric setting."
+        },
+        {
+          name: "Local Pub & Taphouse",
+          description: "Friendly neighborhood pub with local beers, pub games, and community atmosphere.",
+          reason: "Meet locals and enjoy regional craft beers in a welcoming environment."
+        },
+        {
+          name: "Night Market Food Court",
+          description: "Evening food market with diverse vendors, live music, and outdoor seating.",
+          reason: "Sample various cuisines while enjoying the vibrant evening atmosphere."
+        }
+      ],
+      family: [
+        {
+          name: "Adventure Playground",
+          description: "Large playground with climbing structures, slides, and interactive play areas.",
+          reason: "Safe, fun environment where kids can play and parents can relax."
+        },
+        {
+          name: "Mini Golf & Ice Cream",
+          description: "Family-friendly mini golf course with themed holes and ice cream parlor.",
+          reason: "Classic family fun activity that everyone can enjoy together."
+        },
+        {
+          name: "Children's Discovery Center",
+          description: "Interactive museum with hands-on exhibits designed for curious young minds.",
+          reason: "Educational entertainment that makes learning fun for kids of all ages."
+        },
+        {
+          name: "Family Bike Trail",
+          description: "Safe, paved trail perfect for family cycling with bike rental available.",
+          reason: "Healthy outdoor activity that families can enjoy together at their own pace."
+        }
       ]
     };
 

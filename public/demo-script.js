@@ -83,6 +83,15 @@ class DemoLocationActivityFinder {
         
         // Display activities suggestions
         this.renderCategory('activitiesResults', suggestions.activities || [], 'activities');
+        
+        // Display shopping suggestions
+        this.renderCategory('shoppingResults', suggestions.shopping || [], 'shopping');
+        
+        // Display nightlife suggestions
+        this.renderCategory('nightlifeResults', suggestions.nightlife || [], 'nightlife');
+        
+        // Display family suggestions
+        this.renderCategory('familyResults', suggestions.family || [], 'family');
     }
 
     renderCategory(containerId, items, category) {
@@ -125,7 +134,10 @@ class DemoLocationActivityFinder {
         });
         
         const targetPanel = category === 'food' ? 'foodTab' : 
-                           category === 'tourist' ? 'touristTab' : 'activitiesTab';
+                           category === 'tourist' ? 'touristTab' : 
+                           category === 'activities' ? 'activitiesTab' :
+                           category === 'shopping' ? 'shoppingTab' :
+                           category === 'nightlife' ? 'nightlifeTab' : 'familyTab';
         document.getElementById(targetPanel).classList.add('active');
     }
 
